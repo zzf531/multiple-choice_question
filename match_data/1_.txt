@@ -1,0 +1,326 @@
+QUESTION  1
+以下⼯作于OSI  参考模型数据链路层的设备是______。（选择⼀项或多项）
+A.  ⼴域⽹交换机
+B.  路由器
+C.  中继器
+D.  集线器
+Correct  Answer:  A
+Explanation
+Explanation/Reference:
+A.⼴域⽹交换机  B.  路由器  C.  中继器  D.  集线器
+数据链路  ⽹络层  物理层  物理层
+QUESTION  2
+下列有关光纤的说法中哪些是错误的？
+A.  多模光纤可传输不同波长不同⼊射⾓度的光
+B.  多模光纤的纤芯较细
+C.  采⽤多模光纤时，信号的最⼤传输距离⽐单模光纤长
+D.  多模光纤的成本⽐单模光纤低
+Correct  Answer:  BC
+Explanation
+Explanation/Reference:
+QUESTION  3
+IP  地址202.135.111.77  对应的⾃然分类⽹段的⼴播地址为_____________。
+Correct  Answer:  202.135.11.255
+Explanation
+Explanation/Reference:
+QUESTION  4
+在如图所⽰的TCP  连接的建⽴过程中，SYN  中的Z  部分应该填⼊________。 
+A.  a
+B.  b 
+C.  a+1 
+D.  b+1 
+Correct  Answer:  D
+Explanation 
+Explanation/Reference:
+X=  a+1  （确认收到a，期望下次发送a+1） 
+Y=a+1 
+Z=b+1（确认收到b） 
+QUESTION  5
+FTP  默认使⽤的控制协议端⼜是______。 
+A.  20
+B.  21 
+C.  23 
+D.  22 
+Correct  Answer:  B
+Explanation 
+Explanation/Reference:
+A.  20  B.  21  C.  23  D.  22 
+ftp数据连接  ftp控制连接  telnet  ssh 
+QUESTION  6
+⽤______命令可指定下次启动使⽤的操作系统软件。 
+A.  startup
+B.  boot-loader 
+C.  bootfile 
+D.  boot  startup 
+Correct  Answer:  B
+Explanation 
+Explanation/Reference:
+boot-loader-加载应⽤程序⽂件P192 
+QUESTION  7
+通常情况下，路由器会对长度⼤于接⼜MTU  的报⽂分⽚。为了检测线路MTU，可以带______参数ping 
+⽬的地址。 
+A.  –a
+B.  –d 
+C.  –f 
+D.  –c 
+Correct  Answer:  C
+Explanation 
+Explanation/Reference:
+-a  ————带源 
+-f  ————不允许对ICMP  Echo  Request报⽂进⾏分⽚ 
+-tos————  type  of  service  tos域的值  默认0（0-255） 
+-t  ————报⽂超时时间  ，默认2000毫秒 
+-s  ————报⽂⼤⼩，默认56字节（20-8100） 
+-c  ————报⽂数⽬，默认5 
+-h  ————指定报⽂ttl值，默认255（0-255） 
+-m————指定发送报⽂时间间隔，默认200毫秒  （1-65535） 
+QUESTION  8
+如果以太⽹交换机中某个运⾏STP  的端⼜不接收或转发数据，接收并发送BPDU，不进⾏地址学习，那么该
+端⼜应该处于______状态。 
+A.  Blocking
+B.  Listening 
+C.  Learning 
+D.  Forwarding 
+E.  Waiting 
+F.  Disable 
+Correct  Answer:  B
+Explanation 
+E  xplanation/Reference:
+  接收配置BPDU  发送配置BPDU  MAC地址学习  收发数据 
+Disable         
+Blocking  √       
+Listening  √  √     
+Learning  √  √  √   
+Forwarding  √  √  √  √
+QUESTION  9 
+在如图所⽰的交换⽹络中A，所有交换机都启⽤了STP  协议。SWA  被选为了根桥。根据图中的信息来看，
+_______端⼜应该被置为Blocking  状态。（选择⼀项或多项） 
+A.  SWC  的P1
+B.  SWC  的P2 
+C.  SWD  的P1 
+D.  SWD  的P2 
+E.  信息不⾜，⽆法判断 
+Correct  Answer:  B
+Explanation 
+Explanation/Reference:
+桥ID  ：桥优先级.MAC地址 
+4096倍数  最⼤65535  默认32768 
+根桥选举：线⽐较桥优先级，在⽐较MAC地址，越⼩越优先 
+QUESTION  10
+配置交换机SWA  的桥优先级为0  的命令为______。 
+A.  [SWA]  stp  priority  0
+B.  [SWA-Ethernet1/0/1]  stp  priority  0 
+C.  [SWA]  stp  root  priority  0 
+D.  [SWA-Ethernet1/0/1]  stp  root  priority  0 
+Correct  Answer:  A
+Explanation 
+Explanation/Reference:
+QUESTION  11
+IP  地址10.0.10.32  和掩码255.255.255.224  代表的是⼀个______。 
+A.  主机地址
+B.  ⽹络地址 
+C.  ⼴播地址 
+D.  以上都不对
+Correct  Answer:  B
+Explanation
+ 
+Explanation/Reference: 
+10.  0.  10.  001  00000 
+255.255.255.111  00000 
+ 
+QUESTION  12 
+IP  地址132.119.100.200  的⼦⽹掩码是255.255.255.240，哪么它所在⼦⽹的⼴播地址是______。 
+ 
+A.  132.119.100.207 
+B.  132.119.100.255 
+C.  132.119.100.193 
+D.  132.119.100.223 
+ 
+Correct  Answer:  A 
+Explanation 
+ 
+Explanation/Reference: 
+132.119.100.1100  1000 
+132.119.100.1100  1111  ….  ⼴播地址 
+ 
+QUESTION  13 
+TFTP  采⽤的传输层知名端⼜号为______。 
+ 
+A.  67 
+B.  68 
+C.  69 
+D.  53 
+ 
+Correct  Answer:  C 
+Explanation 
+ 
+Explanation/Reference: 
+TCP（6）：ftp——20/21 
+ssh——22 
+telnet——23 
+smtp——25  接收邮件 
+pop3——110  发送邮件 
+DNS——53 
+http——  80 
+https——443  http安全版，下加⼊ssl层 
+UDP(17)  ：DNS——53 
+Bootp——67服务器/68客户端（就是dhcp  ，dhcp基于bootp发展⽽来  ） 
+Tftp——69 
+Snmp——161/162  服务器监听的端⼜号161，客户端监听端⼜号 
+ 
+QUESTION  14 
+在Windows  操作系统中，哪⼀条命令能够显⽰ARP  表项信息？ 
+ 
+A.  display  arp 
+B.  arp  –a 
+C.  arp  –d 
+D.  show  arp 
+ 
+Correct  Answer: 
+Explanation 
+ 
+Explanation/Reference: 
+arp  –  d  删除arp表项 
+arp  –s  IP  MAC  ——MAC静态绑定arp 
+ 
+QUESTION  15 
+客户的⽹络连接形如： 
+HostA----GE0/0--MSR-1--S1/0-----WAN-----S1/0--MSR-2--GE0/0----HostB 
+两台MSR  路由器通过⼴域⽹实现互连，⽬前物理连接已经正常。MSR-1  的接⼜S1/0  地址为3.3.3.1/30， 
+MSR-2  的接⼜S1/0  地址为3.3.3.2/30，现在在MSR-1  上配置了如下三条静态路由： 
+ip  route-static  192.168.1.0  255.255.255.0  3.3.3.2 
+ip  route-static  192.168.2.0  255.255.255.0  3.3.3.2 
+ip  route-static  192.168.0.0  255.255.255.0  3.3.3.2 
+其中192.168.0.0/22  ⼦⽹是主机HostB  所在的局域⽹段。那么如下描述哪些是正确的？（选择⼀项或多项） 
+ 
+A.  这三条路由都会被写⼊MSR-1  的路由表 
+B.  只有第三条路由会被写⼊MSR-1  的路由表 
+C.  这三条路由可以被⼀条路由ip  route-static  192.168.0.0  255.255.252.0  3.3.3.2  代替 
+D.  只有第⼀条路由会被写⼊MSR-1  的路由表 
+ 
+Correct  Answer:  AC 
+Explanation 
+ 
+Explanation/Reference: 
+第三条注意掩码24位，不能代替前两条 
+ 
+QUESTION  16 
+如下哪种路由协议只关⼼到达⽬的⽹段的距离和⽅向？（选择⼀项或多项） 
+ 
+A.  IGP 
+B.  OSPF 
+C.  RIPv1 
+D.  RIPv2 
+ 
+Correct  Answer:  CD 
+Explanation 
+ 
+Explanation/Reference: 
+ 
+ 
+QUESTION  17 
+两台空配置的MSR  路由器通过图⽰的⽅式连接，通过配置IP  地址，两台路由器的GE0/0  接⼜可以互通。 
+ 
+ 
+ 
+ 
+ 
+如今分别在两台路由器上增加如下配置： 
+RTA： 
+[RTA]ospf 
+[RTA-ospf-1]area  0 
+[RTA-ospf-1-area-0.0.0.0]network  192.168.1.1  0.0.0.3 
+[RTA-GigabitEthernet0/0]ospf  dr-priority  2 
+RTB： 
+[RTB]ospf 
+[RTB-ospf-1]area  0 
+[RTB-ospf-1-area-0.0.0.0]network  192.168.1.1  0.0.0.3 
+[RTB-GigabitEthernet0/0]ospf  dr-priority  （错误配置命令） 
+那么在OSPF  邻居状态稳定后，______。（选择⼀项或多项） 
+ 
+A.  OSPF  接⼜优先级相同，在192.168.1.0/30  ⽹段上不进⾏OSPF  DR  选举 
+B.  两台路由器中，⼀台为DR，⼀台为BDR 
+C.  两台路由器中，⼀台为DR，⼀台为DRother 
+D.  两台路由器的邻居状态分别为FULL、2-Way 
+ 
+Correct  Answer:  B 
+Explanation 
+ 
+Explanation/Reference: 
+[接⼜]  ospf  dr-priority  （0-255）  修改接⼜优先级，默认为1  ，优先级为0的不参与选举 
+只有⼴播⽹，NBMA⽹络中才有DB,BDR选举，千兆以太⼜默认接⼜类型⼴播 
+修改ospf⽹络类型：[接⼜]ospf  network-type  （） 
+DR,BDR的选举是针对接⼜、⽹段⽽⾔的的，并⾮该RT是DR,BDR。通过⽐较接⼜优先级（越⼤越优）， 
+⼀样则⽐较router  id（越⼤越优） 
+DR  other之间另据状态停留在2-way 
+ 
+QUESTION  18 
+在路由器的路由表中有⼀条默认路由，其⽬的⽹段和掩码都是0.0.0.0，⽽其下⼀跳是路由器的S0/0  接⼜， 
+那么下列关于此路由的描述正确的是______。 
+ 
+A.  当路由器收到去往⽬的地址120.1.1.1  的数据包时，如果路由器表中没有其他确切匹配项，那么该数据包 
+将匹配此默认路由 
+B.  该路由的掩码最短，因此只有在没有其它路由匹配数据包的情况下，数据包才会按照默认路由转发 
+C.  这条路由的度量值有可能是3 
+D.  这条路由的优先级有可能是100 
+ 
+Correct  Answer:  ABCD 
+Explanation 
+ 
+Explanation/Reference: 
+静态默认路由度量值为0，不可能 
+协议默认路由的度量值可能是3  ， 
+stub区域： 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+设置为stub区域后，产⽣⼀条三类lsa默认路由，该默认路由度量值类似引⼊外部路由 
+将RTD接⼜开销设置为2，则可达到题中效果 
+ 
+ 
+QUESTION  19 
+在运⾏了RIP  的MSR  路由器上看到如下路由信息： 
+<MSR>display  ip  routing-table  6.6.6.6 
+Routing  Table  :  Public 
+Summary  Count  :  2 
+Destination/Mask  Proto  Pre  Cost  NextHop  Interface 
+6.6.0/24  RIP  100  1  100.1.1.1  GE0/0 
+6.0.0.0/8  Static  60  0  100.1.1.1  GE0/0 
+此时路由器收到⼀个⽬的地址为6.6.6.6  的数据包，那么______。 
+ 
+A.  该数据包将优先匹配路由表中的RIP  路由，因为其掩码最长 
+B.  该数据包将优先匹配路由表中RIP  路由，因为其优先级⾼ 
+C.  该数据包将优先匹配路由表中的静态路由，因为其花费Cost  ⼩ 
+D.  该数据包将优先匹配路由表中的静态路由，因为其掩码最短 
+ 
+Correct  Answer:  A 
+Explanation 
+ 
+Explanation/Reference: 
+只有优先级最⾼的会被加⼊路由表，掩码不同都会被加⼊路由表 
+路由表查找规则1）最长匹配转发  2）⾮直连⽹段迭代查找  3）默认路由最后匹配 
+ 
+QUESTION  20 
+⼀台空配置MSR  路由器RTA  分别通过GE0/0、GE1/0  连接两台运⾏在OSPF  Area  0  的路由器RTB  和 
+RTC。RTA  的接⼜GE0/0  和GE1/0  的IP  地址分别为192.168.3.2/24  和192.168.4.2/24。在RTA  上添加如下 
+配置： 
+[MSR-ospf-1]  area  0.0.0.0 
+[MSR-ospf-1-area-0.0.0.0]network  192.168.0  0.0.3.255 
+[MSR-GigabitEthernet0/0]ospf  cost  2 
+[MSR-GigabitEthernet1/0]ospf  dr-priority  0 
+那么关于上述配置描述正确的是_____。（选择⼀项或多项） 
+ 
+A.  该配置在MSR  路由器的GE0/0、GE1/0  上都启动了OSPF 
+B.  该配置只在MSR  路由器的GE0/0  接⼜上启动了OSPF 
+C.  RTA  可能成为两个GE  接⼜所在⽹段的DR 
+D.  RTA  只可能成为其中⼀个GE  接⼜所在⽹段的DR 
+E.  修改接⼜GE0/0  的Cost  不影响OSPF  邻接关系的建⽴ 
+ 
+Correct  Answer:  BDE 
+Explanation 

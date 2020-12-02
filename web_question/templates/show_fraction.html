@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Question_1+x</title>
+</head>
+<body>
+<div class="container">
+<br>
+<p>&nbsp;(依照考试中文件夹命名的严谨性,第六题答错分数为负, 或无法查看成绩, 日期以今日为准!)</p><br>
+{% for i in af %}
+    姓名: <strong>{{ i.name }}</strong>&nbsp;&nbsp;&nbsp;分数: <strong>{{ i.fract }}</strong><br>
+{% endfor %}
+</div>
+</body>
+</html>

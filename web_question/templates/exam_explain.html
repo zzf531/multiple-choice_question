@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Question_1+x</title>
+</head>
+<body>
+<div class="container">
+<form action="{% url 'question:exam'%}" method="post">
+
+    {% csrf_token %}
+    <br><h3>《网络系统建设与运维(中级)》<small>考试须知小测试</small></h3>
+    <p>1. 网络系统建设与运维(中级) 总分为 __ , 考试时长为 __ .</p>
+    <input type="radio" name="q1", value=0>A: 100分, 250分钟<br>
+    <input type="radio" name="q1", value=0>B: 120分, 200分钟 <br>
+    <input type="radio" name="q1", value=1>C: 800分, 120分钟 <br>
+    <input type="radio" name="q1", value=0>D: 600分, 120分钟 <br>
+    <input type="radio" name="q1", value=0>E: 800分, 150分钟 <br>
+
+    <br><p>2 除非任务另有说明, 一下哪些操作是禁止的 ( ) </p>
+    <input type="radio" name="q2" value=0> A. 创建或删除接口<br>
+    <input type="radio" name="q2" value=0> B. 创建题目外的wlan <br>
+    <input type="radio" name="q2" value=0> C. 使用题目外的ip地址 <br>
+    <input type="radio" name="q2" value=0> D. 新增或替换设备 <br>
+    <input type="radio" name="q2" value=1> E. 以上全部 <br>
+
+    <br><p>3 考生须在考试结束前<strong>5分钟</strong>,内答题结果保存在指定文件,文件夹命名规则为</p>
+    <input type="radio" name="q3" value=0> 姓名_学校<br>
+    <input type="radio" name="q3" value=0> 身份证_学号<br>
+    <input type="radio" name="q3" value=1> 姓名_日期<br>
+    <input type="radio" name="q3" value=0> 身份证_学号_日期<br>
+    <input type="radio" name="q3" value=0> 学校名+身份证+姓名 <br>
+    <input type="radio" name="q3" value=0> 姓名-日期 <br>
+
+    <br><p>4. 保存ensp的实验环境及设备配置的顺序是</p>
+    <input type="radio" name="q4" value=1> 首先在每台设备用户视图下执行save命令, 再单击eNSP左上角"保存"按钮<br>
+    <input type="radio" name="q4" value=0> 首先单击eNSP左上角"保存"按钮,再到每台设备用户视图下执行save命令<br>
+
+    <br><p>5. 将eNSP中的配置结果导出至指定文件夹,例如:保存 HZ-HZXiaoYuan-Edge01-AR6140的配置
+    文件,则右键 HZ-HZXiaoYuan-Edge01-AR6140-----导出设备配置. 保存文件命名规则为: ( --- ),例如
+    某设备名称为HZ-HZXiaoYuan-Edge01-AR6140, 则文件命名为: ( --- )</p>
+    <input type="radio" name="q5" value=0> 设备名称.zzf , HZ-HZXiaoYuan-Edge01-AR6140.zzf<br>
+    <input type="radio" name="q5" value=0> 设备名称.pdf , HZ-HZXiaoYuan-Edge01-AR6140.pdf<br>
+    <input type="radio" name="q5" value=0> 设备名称.cfg , HZ-HZXiaoYuan-Edge01.cfg<br>
+    <input type="radio" name="q5" value=0> 设备名称.lbw , HZ-HZXiaoYuan-Edge01-AR6140.lbw<br>
+    <input type="radio" name="q5" value=1> 设备名称.cfg , HZ-HZXiaoYuan-Edge01-AR6140.cfg<br>
+
+    <br><p>6. 按照考试要求的文件夹命名方式在下方命名.  <small>(本题答错判负或无法查看分数, 本表单为班级表单,请填写真实姓名,一切以今日为准.)</small></p>
+    <input type="text" class="form-control" name="q6" placeholder="">
+
+
+    <br><input type="submit" class="btn btn-success" value='交卷'>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question_1+x</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+input[type='checkbox']:checked {
+    background: #abd;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>题目如下:</h1>
+    {{ post.numbers }}
+    {{ post.content | linebreaks}}
+    {{ post.options | linebreaks}}
+    <form action="{% url 'question:choice' post.id%}" method="post">
+    {% csrf_token %}
+        {% for i in choice_list %}
+            {{ i }}. <input type="checkbox" name="c" value="{{ i }}">&nbsp&nbsp&nbsp
+        {% endfor %}
+        <br><input type="submit" class="btn btn-success" value='下一题'>
+    </form>
+
+    <br><input type="submit" class="btn btn-info" value="显示答案" onclick="display('lb')">
+    <div id="lb" style="display:none">
+        <font>Correct Answer: {{ post.answer }}</font><br><br>
+        <font>Explanation/Reference: <br>{{ post.reference | linebreaks}}</font>
+    </div>
+
+    <small><br><br><br><br><br><hr><font size="1">{{ tgrj }}</font><br></small>
+</div>
+    <script type="text/javascript">
+        function display(id){
+            var traget=document.getElementById(id);
+            if(traget.style.display=="none"){
+                traget.style.display="";
+            }else{
+                traget.style.display="none";
+          }
+       }
+    </script>
+</body>
+</html>
